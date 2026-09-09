@@ -1,0 +1,66 @@
+generated: '2026-09-09'
+method: probed
+source: live HTTPS probes of the /.well-known/ discovery surface, 2026-09-09
+description: >-
+  Probe of the /.well-known/ discovery surface on every host this record knows:
+  the registrable domain (fmshrc.gov), its www host, and fmshrc-ecms.entellitrak.com
+  — the vendor-hosted Electronic Case Management System (e-CMS) that the agency's own
+  "Instructions for Electronic Filing" guide links to. FMSHRC publishes no API and no
+  baseURL or OpenAPI servers[] host exists, so those two host classes are empty. Every
+  probed path returned 404. The Drupal 10 site answers 404 with a full themed HTML error
+  page (~28KB), and the Entellitrak tenant answers with an Apache 404; neither is a soft
+  200, and no discovery document was found. NO WellKnown or SecurityTxt pointer is emitted
+  in apis.yml — this file records an absence, not a presence.
+hosts:
+  - host: www.fmshrc.gov
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+      - path: /.well-known/openid-configuration
+        status: 404
+      - path: /.well-known/oauth-authorization-server
+        status: 404
+      - path: /.well-known/api-catalog
+        status: 404
+      - path: /.well-known/ai-plugin.json
+        status: 404
+      - path: /.well-known/agent-card.json
+        status: 404
+      - path: /.well-known/agent.json
+        status: 404
+  - host: fmshrc.gov
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+      - path: /.well-known/openid-configuration
+        status: 404
+      - path: /.well-known/oauth-authorization-server
+        status: 404
+      - path: /.well-known/api-catalog
+        status: 404
+      - path: /.well-known/ai-plugin.json
+        status: 404
+      - path: /.well-known/agent-card.json
+        status: 404
+      - path: /.well-known/agent.json
+        status: 404
+  - host: fmshrc-ecms.entellitrak.com
+    note: >-
+      Vendor-operated tenant (Entellitrak, Tyler Technologies) linked from
+      https://fmshrc.gov/guides/instructions-electronic-filing. The root 302s to
+      /etk-fmshrc-ecms-prod/login.request.do — a credentialed login form. Probed for
+      completeness because the agency links to it; anything served here would belong to
+      the vendor, not to FMSHRC.
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+      - path: /.well-known/openid-configuration
+        status: 404
+      - path: /.well-known/oauth-authorization-server
+        status: 404
+      - path: /.well-known/api-catalog
+        status: 404
+      - path: /.well-known/agent-card.json
+        status: 404
+      - path: /.well-known/agent.json
+        status: 404

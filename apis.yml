@@ -1,10 +1,16 @@
 aid: federal-mine-safety-and-health-review-commission
 name: Federal Mine Safety and Health Review Commission
 description: >-
-  The Federal Mine Safety and Health Review Commission is an independent
-  adjudicative agency that provides administrative trial and appellate review of
-  legal disputes arising under the Federal Mine Safety and Health Amendments Act
-  of 1977 (Mine Act).
+  The Federal Mine Safety and Health Review Commission (FMSHRC) is an independent
+  United States adjudicative agency that provides administrative trial and appellate
+  review of legal disputes arising under the Federal Mine Safety and Health Amendments
+  Act of 1977 (the Mine Act). Its administrative law judges and its five-member
+  Commission hear contests of the citations, orders and civil penalties issued by the
+  Department of Labor's Mine Safety and Health Administration, along with miner
+  discrimination complaints under section 105(c). FMSHRC does not regulate mining or
+  enforce the Mine Act. It publishes decisions, dockets and Blue Book volumes as HTML
+  and PDF on fmshrc.gov and runs a vendor-hosted electronic case management system for
+  filing, but exposes no public API, developer program or machine-readable contract.
 type: Index
 deliveryModel:
   model: unknown
@@ -31,16 +37,22 @@ accessModel:
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/federal-mine-safety-and-health-review-commission.png
 access: 3rd-Party
 created: '2024-12-03'
-modified: '2026-04-28'
+modified: '2026-09-09'
 position: Consuming
 tags:
   - Federal-Government
   - Mine Safety
   - Adjudication
+  - Occupational-Safety
+  - Legal
+  - Regulatory-Enforcement
 tags_raw:
   - Federal Government
   - Mine Safety
   - Adjudication
+  - Occupational Safety
+  - Legal
+  - Regulatory Enforcement
 url: >-
   https://raw.githubusercontent.com/api-evangelist/federal-mine-safety-and-health-review-commission/refs/heads/main/apis.yml
 specificationVersion: '0.23'
@@ -48,10 +60,48 @@ apis: []
 common:
   - type: DomainSecurity
     url: security/federal-mine-safety-and-health-review-commission-domain-security.yml
+  - type: VulnerabilityDisclosure
+    url: security/federal-mine-safety-and-health-review-commission-vulnerability-disclosure.yml
+  - type: Security
+    url: https://www.fmshrc.gov/content/vulnerability-disclosure-policy
+  - type: LLMsTxt
+    url: llms/federal-mine-safety-and-health-review-commission-llms.txt
   - type: LinkedIn
     url: https://www.linkedin.com/company/federal-mine-safety-and-health-review-commission
   - type: Website
     url: https://www.fmshrc.gov/
+  - type: PrivacyPolicy
+    url: https://www.fmshrc.gov/content/fmshrc-privacy-policy
+  - type: Support
+    url: https://www.fmshrc.gov/content/contact-us
+  - type: Blog
+    url: https://www.fmshrc.gov/about/news
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
+x-enrichment:
+  date: '2026-09-09'
+  status: minimal
+  artifacts_added: 3
+  pass: local-v3
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: >-
+    FMSHRC runs a Drupal 10 site with JSON:API and REST disabled — /jsonapi, /api, /rest,
+    /graphql, /data.json and /openapi.json all return 404 and a node requested with
+    ?_format=json returns HTTP 406 — and its only transactional surface, the e-CMS at
+    fmshrc-ecms.entellitrak.com, is a vendor-hosted login form, so the agency publishes
+    decisions as HTML and PDF and no programmable interface at all.
+  evidence:
+    - url: https://www.fmshrc.gov/jsonapi
+      status: 404
+    - url: https://www.fmshrc.gov/node/5513050?_format=json
+      status: 406
+    - url: https://www.fmshrc.gov/openapi.json
+      status: 404
+    - url: https://www.fmshrc.gov/.well-known/api-catalog
+      status: 404
+    - url: https://fmshrc-ecms.entellitrak.com/openapi.json
+      status: 404
+  checked: '2026-09-09'
