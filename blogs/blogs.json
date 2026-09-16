@@ -1,0 +1,14 @@
+{
+  "repo": "federal-mine-safety-and-health-review-commission",
+  "feeds": [
+    {
+      "source": "https://www.fmshrc.gov/content/contact-us",
+      "feed_url": "https://www.fmshrc.gov/content/contact-us",
+      "title": "",
+      "saved": 0,
+      "method": "none"
+    }
+  ],
+  "post_count": 0,
+  "fetched": "2026-09-13T13:00:00Z"
+}
