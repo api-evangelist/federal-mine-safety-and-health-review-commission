@@ -40,7 +40,7 @@ created: '2024-12-03'
 modified: '2026-09-09'
 position: Consuming
 tags:
-  - Federal-Government
+  - Federal Government
   - Mine Safety
   - Adjudication
   - Occupational Safety
@@ -53,6 +53,7 @@ tags_raw:
   - Occupational Safety
   - Legal
   - Regulatory Enforcement
+  - Federal-Government
 url: >-
   https://raw.githubusercontent.com/api-evangelist/federal-mine-safety-and-health-review-commission/refs/heads/main/apis.yml
 specificationVersion: '0.23'
