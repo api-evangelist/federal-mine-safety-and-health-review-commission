@@ -1,4 +1,4 @@
-# Federal Mine Safety and Health Review Commission (federal-mine-safety-and-health-review-commission)
+# Federal Mine Safety and Health Review Commission
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,37 +64,84 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-The Federal Mine Safety and Health Review Commission is an independent adjudicative agency that provides administrative trial and appellate review of legal disputes arising under the Federal Mine Safety and Health Amendments Act of 1977 (Mine Act).
+The Federal Mine Safety and Health Review Commission (FMSHRC) is an independent United States adjudicative agency that provides administrative trial and appellate review of legal disputes arising under the Federal Mine Safety and Health Amendments Act of 1977 (the Mine Act). Its administrative law judges and its five-member Commission hear contests of the citations, orders and civil penalties issued by the Department of Labor's Mine Safety and Health Administration, along with miner discrimination complaints under section 105(c). FMSHRC does not regulate mining or enforce the Mine Act. It publishes decisions, dockets and Blue Book volumes as HTML and PDF on fmshrc.gov and runs a vendor-hosted electronic case management system for filing, but exposes no public API, developer program or machine-readable contract.
 
-**URL:** [Visit APIs.json URL](https://raw.githubusercontent.com/api-evangelist/federal-mine-safety-and-health-review-commission/refs/heads/main/apis.yml)
+**Areas:** Federal Government · Mine Safety · Adjudication · Occupational Safety · Legal · Regulatory-Enforcement
 
-## Scope
+## Federal Mine Safety and Health Review Commission on APIs.io
 
-- **Type:** Index
-- **Position:** Consumer
-- **Access:** 3rd-Party
+Everything profiled for Federal Mine Safety and Health Review Commission is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/federal-mine-safety-and-health-review-commission/](https://apis.io/providers/federal-mine-safety-and-health-review-commission/)** — or go straight to one of the APIs or properties below.
 
-## Tags
+### Published properties
 
-- Federal Government
-- Mine Safety
-- Adjudication
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## Timestamps
+#### Security (2)
 
-- **Created:** 2024-12-03
-- **Modified:** 2026-04-28
+Authentication, trust centre, and vulnerability disclosure.
 
-## APIs
+- [Federal Mine Safety And Health Review Commission Domain Security](https://apis.io/security/federal-mine-safety-and-health-review-commission/federal-mine-safety-and-health-review-commission-domain-security/)
+- [Federal Mine Safety And Health Review Commission Vulnerability Disclosure](https://apis.io/security/federal-mine-safety-and-health-review-commission/federal-mine-safety-and-health-review-commission-vulnerability-disclosure/)
 
-No public API has been identified for this agency. Operations are limited to administrative adjudication; case data is published via the agency website rather than a programmable interface.
+## Where to find this API
 
-## Common Properties
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
 - [Website](https://www.fmshrc.gov/)
+- [Support](https://www.fmshrc.gov/content/contact-us)
+- [Blog](https://www.fmshrc.gov/about/news)
+- [Security](https://www.fmshrc.gov/content/vulnerability-disclosure-policy)
+- [Privacy policy](https://www.fmshrc.gov/content/fmshrc-privacy-policy)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
+**Kin Score 10.8** — minimal · rubric 0.24.0 · scored 2026-10-17
 
-**Email:** kin@apievangelist.com
+| Facet | Score |
+|---|---|
+| Discoverability | 55.4 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 10.5 |
+| Developer ergonomics | 7.1 |
+| Access clarity | 10.5 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 15.7** — Government & Public Sector
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/federal-mine-safety-and-health-review-commission/](https://apis.io/providers/federal-mine-safety-and-health-review-commission/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Federal Mine Safety and Health Review Commission: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/federal-mine-safety-and-health-review-commission/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
